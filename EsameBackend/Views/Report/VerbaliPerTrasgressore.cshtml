@@ -1,0 +1,21 @@
+﻿@model IEnumerable<dynamic>
+
+<h1>Verbali per Trasgressore</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Trasgressore</th>
+            <th>Numero di Verbali</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Trasgressore</td>
+                <td>@item.Verbali</td>
+            </tr>
+        }
+    </tbody>
+</table>
